@@ -12,8 +12,8 @@ _m1n1_version=1.2.6
 
 pkgbase=linux-asahi
 #_commit_id=asahi-${_nextver}-${_asahirel}
-_commit_id=asahi-pf-6.2
-_srcname=linux-${_commit_id}
+_commit_id=asahi-linux-pf-6.2
+_srcname=asahi-linux-pf-asahi-linux-pf-6.2
 _kernelname=${pkgbase#linux}
 _desc="AArch64 Apple Silicon (M1 development kernel)"
 pkgver="${_rcver}${_rcrel:+rc}${_rcrel}.asahi${_asahirel}"
@@ -26,7 +26,7 @@ makedepends=(
 )
 options=('!strip')
 source=(
-  https://github.com/eaxeax/linux/archive/${_commit_id}.tar.gz
+  https://github.com/eaxeax/asahi-linux-pf/archive/${_commit_id}.tar.gz
   config         # the main kernel config file
   config.edge    # overrides for linux-asahi-edge
 )
