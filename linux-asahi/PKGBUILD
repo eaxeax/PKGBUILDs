@@ -12,7 +12,7 @@ _m1n1_version=1.2.6
 
 pkgbase=linux-asahi
 #_commit_id=asahi-${_nextver}-${_asahirel}
-_commit_id=asahi-linux-pf-6.2
+_commit_id=pf-6.2
 _srcname=asahi-linux-pf-asahi-linux-pf-6.2
 _kernelname=${pkgbase#linux}
 _desc="AArch64 Apple Silicon (M1 development kernel)"
