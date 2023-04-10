@@ -7699,3 +7699,10 @@ CONFIG_RUST_OVERFLOW_CHECKS=y
 # CONFIG_RUST_BUILD_ASSERT_ALLOW is not set
 # end of Rust hacking
 # end of Kernel hacking
+
+#
+# pf-kernel patches
+#
+CONFIG_KSM=y
+CONFIG_TCP_CONG_BBR=m
+CONFIG_TCP_CONG_BBR2=m

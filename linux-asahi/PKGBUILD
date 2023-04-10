@@ -12,7 +12,7 @@ _m1n1_version=1.2.6
 
 pkgbase=linux-asahi
 #_commit_id=asahi-${_nextver}-${_asahirel}
-_commit_id=asahi-${_rcver}${_rcrel+-rc}${_rcrel}-${_asahirel}
+_commit_id=asahi-pf-6.2
 _srcname=linux-${_commit_id}
 _kernelname=${pkgbase#linux}
 _desc="AArch64 Apple Silicon (M1 development kernel)"
@@ -26,15 +26,15 @@ makedepends=(
 )
 options=('!strip')
 source=(
-  https://github.com/AsahiLinux/linux/archive/${_commit_id}.tar.gz
+  https://github.com/eaxeax/linux/archive/${_commit_id}.tar.gz
   config         # the main kernel config file
   config.edge    # overrides for linux-asahi-edge
 )
-sha256sums=('b37696174977045d275356637dd66777bba28381c23279b7f06cfac2afacb26f'
-            '0e75f391471d07aa01d4c4ad41f5f26506995ba133018afa45b5bb6d08461ab9'
+sha256sums=('SKIP'
+            'SKIP'
             '7ee519afc074b11ea4f38bc4bd8562e9235b65b8f6da0a82d44e8536f78a56f8')
-b2sums=('55821dbd915aed1224a173735d970a0c7282cf456abe8967d9988aacf3bca607d47fd633ffd64453d9d30bb01d673c76d4fbd4a546eb40d0de25c70c2ca44f9c'
-        'afec99aeded07caa330a2f17b4d26d4ba725c423b0394bc9154415de0bdaaef5d862040936c6db6c211c357649b6b7f01f01f3b7299220e057026d986b419b21'
+b2sums=('SKIP'
+        'SKIP'
         '9b54b169beb22f537aeeb65264dc06ec5132c0979c8347f990a52d4661d7a51193000573a6e68da679adeb5b601ea206e96963b9c2404532d4a2d3cfa45fc11a')
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
